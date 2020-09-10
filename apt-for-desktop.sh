@@ -41,6 +41,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y wget
 sudo apt-get install -y synaptic
 sudo apt-get install -y catfish
+sudo apt-get install -y filelight
 sudo apt-get install -y zsh
 sudo apt-get install -y zsh-theme-powerlevel9k
 #APT-----------------------------------------
