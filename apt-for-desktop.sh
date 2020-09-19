@@ -42,6 +42,7 @@ sudo apt-get install -y wget
 sudo apt-get install -y synaptic
 sudo apt-get install -y catfish
 sudo apt-get install -y filelight
+sudo apt-get install -y hardinfo
 sudo apt-get install -y zsh
 sudo apt-get install -y zsh-theme-powerlevel9k
 #APT-----------------------------------------
@@ -73,6 +74,11 @@ echo '#!/bin/bash' >> ~/Asztal/NBTEditor.sh
 echo "google-chrome http://irath96.github.io/webNBT/" >> ~/Asztal/NBTEditor.sh
 chmod +x ~/Asztal/NBTEditor.sh
 
+touch ~/Asztal/Photopea.sh
+echo '#!/bin/bash' >> ~/Asztal/Photopea.sh
+echo "google-chrome http://photopea.com" >> ~/Asztal/Photopea.sh
+chmod +x ~/Asztal/Photopea.sh
+
 touch ~/Asztal/Microsoft_Office.sh
 echo '#!/bin/bash' >> ~/Asztal/Microsoft_Office.sh
 echo "google-chrome http://office.live.com" >> ~/Asztal/Microsoft_Office.sh
@@ -96,6 +102,11 @@ sudo dpkg -i /home/installer-temp/teamviewer.deb
 
 sudo wget -O /home/installer-temp/virtualbox.deb "https://download.virtualbox.org/virtualbox/6.1.12/virtualbox-6.1_6.1.12-139181~Ubuntu~eoan_amd64.deb"
 sudo dpkg -i /home/installer-temp/virtualbox.deb
+
+sudo wget -O /home/installer-temp/speedtest_raw.tgz "https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-x86_64-linux.tgz"
+sudo unzip /home/installer-temp/speedtest_raw.tgz -d /home/installer-temp/
+cp /home/installer-temp/speedtest ~/Asztal/speedtest
+chmod +x ~/Asztal/speedtest
 
 echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
 sudo apt-key adv --keyserver hkps://keyserver.ubuntu.com:443 --recv-keys 379CE192D401AB61
