@@ -139,5 +139,6 @@ sudo apt full-upgrade -y
 clear
 echo Lefutott minden!
 
+echo Default hangeszkoz
 echo Default alkalmazasok
 echo Majd ujrainditas
