@@ -27,6 +27,7 @@ sudo apt-get install -y thunderbird
 sudo apt-get install -y openvpn
 sudo apt-get install -y gimp
 sudo apt-get install -y pinta
+sudo apt-get install -y numlockx
 sudo apt-get install -y transmission
 sudo apt-get install -y handbrake
 sudo apt-get install -y audacity
