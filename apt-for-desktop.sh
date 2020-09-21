@@ -77,6 +77,14 @@ echo '#!/bin/bash' >> ~/Asztal/NBTEditor.sh
 echo "google-chrome http://irath96.github.io/webNBT/" >> ~/Asztal/NBTEditor.sh
 chmod +x ~/Asztal/NBTEditor.sh
 
+touch ~/Asztal/Update.sh
+echo '#!/bin/bash' >> ~/Asztal/Update.sh
+echo "sudo apt update" >> ~/Asztal/Update.sh
+echo "sudo apt upgrade -y" >> ~/Asztal/Update.sh
+echo "sudo apt full-upgrade -y" >> ~/Asztal/Update.sh
+echo "sudo apt dist-upgrade -y" >> ~/Asztal/Update.sh
+chmod +x ~/Asztal/Update.sh
+
 touch ~/Asztal/Photopea.sh
 echo '#!/bin/bash' >> ~/Asztal/Photopea.sh
 echo "google-chrome http://photopea.com" >> ~/Asztal/Photopea.sh
