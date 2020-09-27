@@ -34,6 +34,8 @@ sudo apt-get install -y handbrake
 sudo apt-get install -y audacity
 sudo apt-get install -y obs-studio
 sudo apt-get install -y ark
+sudo apt-get install -y youtube-dl
+sudo apt-get install -y qalculate
 sudo apt-get install -y hardinfo
 sudo apt-get install -y gparted
 sudo apt-get install -y neofetch
