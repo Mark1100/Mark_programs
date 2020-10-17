@@ -87,7 +87,7 @@ echo "sudo apt full-upgrade -y" >> ~/Asztal/Update.sh
 echo "sudo apt dist-upgrade -y" >> ~/Asztal/Update.sh
 chmod +x ~/Asztal/Update.sh
 
-sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo add-apt-repository ppa:nathan-renniewaldock/flux -y
 sudo apt-get update
 sudo apt-get install fluxgui
 
