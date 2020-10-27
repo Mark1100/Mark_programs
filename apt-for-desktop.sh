@@ -7,6 +7,7 @@ sudo apt-get install -y mc
 sudo apt-get install -y net-tools
 sudo apt-get install -y openjdk-8-jdk 
 sudo apt-get install -y openjdk-8-jre
+sudo apt-get install -y jarwrapper
 sudo apt-get install -y htop
 sudo apt-get install -y mysql-client
 sudo apt-get install -y php
