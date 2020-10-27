@@ -71,15 +71,7 @@ sudo dpkg -i /home/installer-temp/vscode.deb
 sudo wget -O /home/installer-temp/Minecraft-raw.zip https://tlauncher.org/jar
 sudo unzip /home/installer-temp/Minecraft-raw.zip -d /home/installer-temp/
 cp /home/installer-temp/TLaunch* ~/Asztal/Minecraft.jar
-touch ~/Asztal/Minecraft-run.sh
-echo '#!/bin/bash' >> ~/Asztal/Minecraft-run.sh
-echo "java -jar Minecraft.jar" >> ~/Asztal/Minecraft-run.sh
-chmod +x ~/Asztal/Minecraft-run.sh
-
-touch ~/Asztal/NBTEditor.sh
-echo '#!/bin/bash' >> ~/Asztal/NBTEditor.sh
-echo "google-chrome http://irath96.github.io/webNBT/" >> ~/Asztal/NBTEditor.sh
-chmod +x ~/Asztal/NBTEditor.sh
+chmod +x ~/Asztal/Minecraft.jar
 
 touch ~/Asztal/Update.sh
 echo '#!/bin/bash' >> ~/Asztal/Update.sh
@@ -88,20 +80,6 @@ echo "sudo apt upgrade -y" >> ~/Asztal/Update.sh
 echo "sudo apt full-upgrade -y" >> ~/Asztal/Update.sh
 echo "sudo apt dist-upgrade -y" >> ~/Asztal/Update.sh
 chmod +x ~/Asztal/Update.sh
-
-sudo add-apt-repository ppa:nathan-renniewaldock/flux -y
-sudo apt-get update
-sudo apt-get install fluxgui
-
-touch ~/Asztal/Photopea.sh
-echo '#!/bin/bash' >> ~/Asztal/Photopea.sh
-echo "google-chrome http://photopea.com" >> ~/Asztal/Photopea.sh
-chmod +x ~/Asztal/Photopea.sh
-
-touch ~/Asztal/Microsoft_Office.sh
-echo '#!/bin/bash' >> ~/Asztal/Microsoft_Office.sh
-echo "google-chrome http://office.live.com" >> ~/Asztal/Microsoft_Office.sh
-chmod +x ~/Asztal/Microsoft_Office.sh
 
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
