@@ -92,6 +92,14 @@ curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install -y spotify-client
 
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+
+sudo apt update && sudo apt install signal-desktop
+
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-get install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
